@@ -1,4 +1,4 @@
-import { CloudflareProviders, EventType } from '../src';
+import { CloudflareProviders, EventType } from 'ag-ui-cloudflare';
 
 // Mock tool implementation
 async function getWeather(location: string): Promise<string> {

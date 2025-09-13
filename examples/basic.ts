@@ -1,4 +1,4 @@
-import { CloudflareAGUIAdapter, CLOUDFLARE_MODELS, EventType } from '../src';
+import { CloudflareAGUIAdapter, CLOUDFLARE_MODELS, EventType } from 'ag-ui-cloudflare';
 import * as dotenv from 'dotenv';
 
 // Load environment variables
