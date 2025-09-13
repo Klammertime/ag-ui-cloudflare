@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] - 2024-01-13
+
+### Fixed
+- Corrected all import paths to use package name `ag-ui-cloudflare` instead of `@ag-ui/cloudflare-ai`
+- Fixed package.json and package-lock.json to use consistent naming
+- Updated all examples to show correct import syntax
+- Fixed documentation to reflect correct package installation and usage
+
+### Changed
+- Examples now import from `ag-ui-cloudflare` to match npm package name
+- Standardized import paths across all documentation
+
 ## [0.1.0] - 2024-01-13
 
 ### Added

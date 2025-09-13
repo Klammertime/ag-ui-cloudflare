@@ -1,6 +1,6 @@
 {
   "name": "ag-ui-cloudflare",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Native AG-UI protocol implementation for Cloudflare Workers AI - Enable CopilotKit with edge AI at 93% lower cost",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
