@@ -1,0 +1,73 @@
+{
+  "name": "ag-ui-cloudflare",
+  "version": "0.1.0",
+  "description": "Native AG-UI protocol implementation for Cloudflare Workers AI - Enable CopilotKit with edge AI at 93% lower cost",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "typecheck": "tsc --noEmit",
+    "verify": "tsx verify.ts",
+    "example:basic": "tsx examples/basic.ts",
+    "example:tools": "tsx examples/with-tools.ts",
+    "example:progressive": "tsx examples/progressive-generation.ts",
+    "prepublishOnly": "npm run build && npm run typecheck"
+  },
+  "keywords": [
+    "ag-ui",
+    "cloudflare",
+    "workers-ai",
+    "copilotkit",
+    "ai",
+    "llm",
+    "streaming",
+    "edge",
+    "edge-ai",
+    "cloudflare-ai",
+    "copilot",
+    "chatbot",
+    "assistant"
+  ],
+  "author": "Audrey Klammer <audrey@klammer.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/audreyklammer/ag-ui-cloudflare.git"
+  },
+  "bugs": {
+    "url": "https://github.com/audreyklammer/ag-ui-cloudflare/issues"
+  },
+  "homepage": "https://github.com/audreyklammer/ag-ui-cloudflare#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "@ag-ui/core": "^0.0.37",
+    "@ag-ui/proto": "^0.0.37"
+  },
+  "dependencies": {
+    "eventsource-parser": "^2.0.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@ag-ui/core": "^0.0.37",
+    "@ag-ui/proto": "^0.0.37",
+    "@types/node": "^20.14.0",
+    "dotenv": "^17.2.2",
+    "tsup": "^8.0.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}

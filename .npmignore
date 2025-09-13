@@ -1,0 +1,30 @@
+# Source files (only ship dist)
+src/
+tests/
+examples/
+
+# Config files
+tsconfig.json
+vitest.config.ts
+.env*
+.gitignore
+
+# Development files
+*.log
+*.md
+!README.md
+!LICENSE
+node_modules/
+coverage/
+.vscode/
+.idea/
+
+# Test files
+test-*.ts
+verify.ts
+*.test.ts
+research-output-*.md
+
+# Build artifacts we don't need
+*.map
+*.tsbuildinfo
