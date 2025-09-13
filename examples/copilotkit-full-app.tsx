@@ -8,7 +8,7 @@
 // ============================================
 
 import { CopilotRuntime, copilotRuntimeNextJSAppRouterEndpoint } from "@copilotkit/runtime";
-import { CloudflareAGUIAdapter, CloudflareProviders, CLOUDFLARE_MODELS } from "@ag-ui/cloudflare-ai";
+import { CloudflareAGUIAdapter, CloudflareProviders, CLOUDFLARE_MODELS } from "ag-ui-cloudflare";
 import { NextRequest } from "next/server";
 
 // Method 1: Using the adapter directly
@@ -329,7 +329,7 @@ NEXT_PUBLIC_COPILOT_CLOUD_PUBLIC_API_KEY=your_copilot_cloud_key
     "@copilotkit/react-ui": "^1.0.0",
     "@copilotkit/react-textarea": "^1.0.0",
     "@copilotkit/runtime": "^1.0.0",
-    "@ag-ui/cloudflare-ai": "^0.1.0",
+    "ag-ui-cloudflare": "^0.1.0",
     "next": "^14.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

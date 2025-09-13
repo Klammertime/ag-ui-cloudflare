@@ -40,7 +40,7 @@ npm install @ag-ui/core @ag-ui/proto
 ### Basic Usage
 
 ```typescript
-import { CloudflareAGUIAdapter } from '@ag-ui/cloudflare-ai';
+import { CloudflareAGUIAdapter } from 'ag-ui-cloudflare';
 
 const adapter = new CloudflareAGUIAdapter({
   accountId: 'your-account-id',
@@ -62,7 +62,7 @@ for await (const event of adapter.execute(messages)) {
 
 ```typescript
 import { CopilotRuntime } from '@copilotkit/runtime';
-import { CloudflareAGUIAdapter } from '@ag-ui/cloudflare-ai';
+import { CloudflareAGUIAdapter } from 'ag-ui-cloudflare';
 
 const adapter = new CloudflareAGUIAdapter({
   accountId: process.env.CLOUDFLARE_ACCOUNT_ID!,
@@ -81,7 +81,7 @@ export async function POST(req: Request) {
 ### Using Providers
 
 ```typescript
-import { CloudflareProviders } from '@ag-ui/cloudflare-ai';
+import { CloudflareProviders } from 'ag-ui-cloudflare';
 
 // Auto-select best model based on capabilities
 const adapter = CloudflareProviders.auto({
@@ -99,7 +99,7 @@ const functionAdapter = CloudflareProviders.llama3_3_70b(config); // Supports to
 ### With AI Gateway
 
 ```typescript
-import { CloudflareProviders } from '@ag-ui/cloudflare-ai';
+import { CloudflareProviders } from 'ag-ui-cloudflare';
 
 const adapter = CloudflareProviders.createWithGateway(
   accountId,

@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 /**
- * Verification script for @ag-ui/cloudflare-ai
+ * Verification script for ag-ui-cloudflare
  *
  * This script tests the adapter with:
  * 1. Mock data (no API needed)
@@ -331,9 +331,9 @@ async function main() {
    npm run verify${colors.reset}
 
 2. To use in your project:
-   ${colors.yellow}npm install @ag-ui/cloudflare-ai
+   ${colors.yellow}npm install ag-ui-cloudflare
 
-   import { CloudflareAGUIAdapter } from '@ag-ui/cloudflare-ai';${colors.reset}
+   import { CloudflareAGUIAdapter } from 'ag-ui-cloudflare';${colors.reset}
 
 3. To integrate with CopilotKit:
    ${colors.yellow}See examples/copilotkit-integration.ts${colors.reset}

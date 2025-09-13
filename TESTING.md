@@ -1,4 +1,4 @@
-# Testing Checklist for @ag-ui/cloudflare-ai
+# Testing Checklist for ag-ui-cloudflare
 
 ## ✅ Automated Tests
 
@@ -79,7 +79,7 @@ npm install /path/to/ag-ui-cloudflare-ai-0.1.0.tgz
 
 # Create test file
 cat > test.js << 'EOF'
-const { CloudflareAGUIAdapter } = require('@ag-ui/cloudflare-ai');
+const { CloudflareAGUIAdapter } = require('ag-ui-cloudflare');
 console.log('Import successful:', !!CloudflareAGUIAdapter);
 EOF
 
@@ -97,7 +97,7 @@ node test.js
 npm link
 
 # In your CopilotKit project
-npm link @ag-ui/cloudflare-ai
+npm link ag-ui-cloudflare
 ```
 
 2. **Update API Route**

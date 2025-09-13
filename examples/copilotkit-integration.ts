@@ -1,5 +1,5 @@
 import { CopilotRuntime, copilotRuntimeNextJSAppRouterEndpoint } from '@copilotkit/runtime';
-import { CloudflareProviders } from '@ag-ui/cloudflare-ai';
+import { CloudflareProviders } from 'ag-ui-cloudflare';
 import { NextRequest } from 'next/server';
 
 /**

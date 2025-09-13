@@ -8,7 +8,7 @@ This guide shows how to use CopilotKit's chat components with the AG-UI Cloudfla
 
 ```bash
 npm install @copilotkit/react-core @copilotkit/react-ui @copilotkit/runtime
-npm install @ag-ui/cloudflare-ai  # or link local package
+npm install ag-ui-cloudflare  # or link local package
 ```
 
 ### 2. Create API Route
@@ -16,7 +16,7 @@ npm install @ag-ui/cloudflare-ai  # or link local package
 **`app/api/copilotkit/route.ts`**
 ```typescript
 import { CopilotRuntime, copilotRuntimeNextJSAppRouterEndpoint } from "@copilotkit/runtime";
-import { CloudflareAGUIAdapter } from "@ag-ui/cloudflare-ai";
+import { CloudflareAGUIAdapter } from "ag-ui-cloudflare";
 
 const serviceAdapter = new CloudflareAGUIAdapter({
   accountId: process.env.CLOUDFLARE_ACCOUNT_ID!,
@@ -228,7 +228,7 @@ function Dashboard() {
 
 ```tsx
 // In your API route, choose different models
-import { CloudflareProviders } from "@ag-ui/cloudflare-ai";
+import { CloudflareProviders } from "ag-ui-cloudflare";
 
 // Auto-select based on needs
 const serviceAdapter = CloudflareProviders.auto({

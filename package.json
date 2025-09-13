@@ -43,12 +43,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/audreyklammer/ag-ui-cloudflare.git"
+    "url": "git+https://github.com/klammertime/ag-ui-cloudflare.git"
   },
   "bugs": {
-    "url": "https://github.com/audreyklammer/ag-ui-cloudflare/issues"
+    "url": "https://github.com/klammertime/ag-ui-cloudflare/issues"
   },
-  "homepage": "https://github.com/audreyklammer/ag-ui-cloudflare#readme",
+  "homepage": "https://github.com/klammertime/ag-ui-cloudflare#readme",
   "engines": {
     "node": ">=18.0.0"
   },

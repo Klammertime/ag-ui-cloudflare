@@ -1,4 +1,4 @@
-# Testing @ag-ui/cloudflare-ai with CopilotKit
+# Testing ag-ui-cloudflare with CopilotKit
 
 ## Quick Test in Your CopilotKit Project
 
@@ -15,7 +15,7 @@ Replace your existing `/app/api/copilotkit/route.ts`:
 
 ```typescript
 import { CopilotRuntime, copilotRuntimeNextJSAppRouterEndpoint } from "@copilotkit/runtime";
-import { CloudflareAGUIAdapter, CloudflareProviders } from "@ag-ui/cloudflare-ai";
+import { CloudflareAGUIAdapter, CloudflareProviders } from "ag-ui-cloudflare";
 import { NextRequest } from "next/server";
 
 // Initialize with your Cloudflare credentials
